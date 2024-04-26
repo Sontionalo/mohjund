@@ -1,0 +1,238 @@
+.hugetext{ 
+    font-size: 50px;
+  }
+  .clr {
+    color:#ffefd5;
+  }
+  .smalltext{ 
+    font-size: 20px; 
+  }
+  input::placeholder {
+    color: red;
+    font-size: 1.2em;
+    font-style: italic;
+  }
+  .button{
+    background-color: #000000; /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    text-decoration: none;
+    font-size: 40px;
+    display: block;
+  }
+  
+  img{ 
+    width: 400px; 
+  } 
+  .textcenter{ 
+    text-align: center; 
+  }
+  span {
+    color: hsl(272, 73%, 45%);
+  }
+  .dot {
+    height: 150px;
+    width: 150px;
+    background-color: #ff00f2;
+    border-radius: 50%;
+    display: block;
+  }
+  .dt {
+    height: 150px;
+    width: 150px;
+    background-color: #d82626;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 73%, 45%);
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+    color: #000
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+    opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+  #scroll-top {
+    position: fixed;
+    bottom: 48px;
+    right: 48px;
+  }
+  
+  #scroll-top button {
+    position: relative;
+    overflow: hidden;
+    height: 48px;
+    width: 48px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    background: rgb(255, 239, 21);
+    transition: width 0.5s;
+    border-radius: 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  #scroll-top button span {
+    display: inline-block;
+    transition: opacity 0.3s ease 0s, transform 0.5s ease 0s;
+    line-height: 48px;
+    font-size: 20px;
+    width: 100%;
+  }
+  
+  #scroll-top button span::before {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 200%;
+    opacity: 0;
+    content: attr(data-hover);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  #scroll-top:hover button {
+    width: 120px;
+    background: #9b59b6;
+  }
+  
+  #scroll-top:hover button span {
+    -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+  
+  #scroll-top:hover button span:before {
+    opacity: 1;
+  }
+  
+  #scroll-top button:active {
+    background: #ffefd5;;
+  }
+  .wrap {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #aaa;
+    margin: 10px;
+    display: flex;
+  }
+  
+  .wrap span {
+    align-self: flex-end;
+  }
+  .wrapper{
+    position: fixed;
+    top: 65%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .link_wrapper{
+    position: relative;
+  }
+  
+  a{
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+  }
+  
+  .icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+  }
+  
+  .icon svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+  }

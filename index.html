@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+    <title>JunaidTranslate</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+    <section id = "mysection" 
+        style="background: #ffefd5;
+        padding: 20px;
+        width: 1350px;
+        line-height: 2.5em;">
+                <div class="wrapper">
+                    <div class="link_wrapper">
+                    <a href="#">Попробовать!</a>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                        <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                        </svg>
+                    </div>
+                    </div>    
+                </div>
+        <div class="textcenter">
+            <h1 class="hugetext">
+                <span>Переводчик текста на русский</span>
+            </h1>
+            <input id="textinput" placeholder="Введите текст" />
+            <p>Английский->Русский</p>
+            <button onclick="uploadMultiple()" class="glow-on-hover" type="button">
+                Перевести
+            </button>
+            <span class="dot"></span>
+            <span class="dt"></span>
+        </div>
+        <div id="scroll-top">
+            <button><span data-hover="Наверх"><i class="fa fa-arrow-up"></i></span></button>
+        </div>
+    </section>
+</body>
+<body>
+    <section id = "mysection" 
+        style="background: hsl(0, 73%, 45%);
+        padding: 150px;
+        width: 300px;
+        line-height: 0.5em;">
+        <h1 class="hugetext">
+            <div class = "clr">Перевод</div>
+        </h1>
+    </section>
+    <script src="animsite.js"></script>
+</body>
+</html>
